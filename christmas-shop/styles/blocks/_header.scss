@@ -1,0 +1,23 @@
+.header {
+  padding: 12px 0;
+  &__content {
+    @include flex-row();
+  }
+  &__logo {
+    @include flex-row($gap: 8px);
+    padding: 8px 20px;
+  }
+  &__menu {
+    &-list {
+      @include flex-row($gap: 8px);
+    }
+    &-link {
+      padding: 12px 20px;
+      &:hover {
+        color: $color-primary;
+        background-color: $color-primary-10;
+        border-radius: 12px;
+      }
+    }
+  }
+}

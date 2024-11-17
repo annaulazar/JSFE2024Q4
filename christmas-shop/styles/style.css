@@ -176,6 +176,7 @@ h5,
 p,
 ul,
 ol,
+li,
 dl,
 dd {
   margin: 0;
@@ -188,8 +189,15 @@ ul {
 
 @font-face {
   font-family: "Montserrat";
-  src: url("../fonts/Montserrat-Thin.woff2") format("woff2");
-  font-weight: 100;
+  src: url("../fonts/Montserrat-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url("../fonts/Montserrat-SemiBold.woff2") format("woff2");
+  font-weight: 600;
   font-style: normal;
   font-display: swap;
 }
@@ -285,17 +293,18 @@ body {
 
 .container {
   max-width: 1440px;
-  padding: 30px 8px;
   margin: 0 auto;
 }
 
-.header_container {
-  max-width: 1440px;
+.header__container {
   padding: 0 8px;
-  margin: 0 auto;
 }
 
-.container_content {
+.section__container {
+  padding: 60px 8px;
+}
+
+.content {
   max-width: 1276px;
   margin: 0 auto;
 }
@@ -309,6 +318,70 @@ svg * {
 a {
   text-decoration: none;
   color: inherit;
+}
+
+.main {
+  background-color: #FF4646;
+  border-radius: 20px;
+}
+
+.header {
+  padding: 12px 0;
+}
+.header__content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0px;
+}
+.header__logo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 20px;
+}
+.header__menu-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px;
+}
+.header__menu-link {
+  padding: 12px 20px;
+}
+.header__menu-link:hover {
+  color: #FF4646;
+  background-color: rgba(255, 70, 70, 0.1);
+  border-radius: 12px;
+}
+
+.button {
+  padding: 20px 32px;
+  border-radius: 20px;
+  background-color: #181C29;
+}
+.button:hover {
+  color: #181C29;
+  background-color: #FFF;
+}
+
+.hero {
+  background: url("/images/bg-ball.png") center/cover no-repeat, url("/images/bg-snow.png") center/cover no-repeat;
+  color: #FFF;
+}
+.hero__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  max-width: 430px;
+  margin: 0 auto;
+  padding: 60px 0;
+}
+.hero__title {
+  text-align: center;
 }
 
 /*# sourceMappingURL=style.css.map */

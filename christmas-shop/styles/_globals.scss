@@ -47,17 +47,18 @@ body {
 
 .container {
   max-width: $base-width;
-  padding: $padding-y $padding-x;
   margin: 0 auto;
 }
 
-.header_container {
-  max-width: $base-width;
+.header__container {
   padding: 0 $padding-x;
-  margin: 0 auto;
 }
 
-.container_content {
+.section__container {
+  padding: $padding-y $padding-x;
+}
+
+.content {
   max-width: $container-width;
   margin: 0 auto;
 }
@@ -71,4 +72,9 @@ svg * {
 a {
   text-decoration: none;
   color: inherit;
+}
+
+.main {
+  background-color: $color-primary;
+  border-radius: $border-radius;
 }
