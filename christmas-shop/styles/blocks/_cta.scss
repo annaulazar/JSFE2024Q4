@@ -3,6 +3,7 @@
   &__content {
     padding: $padding-y 0;
     &-inner {
+      margin: 0 auto;
       color: $color-static-white;
       @include flex-column($gap: 20px);
     }

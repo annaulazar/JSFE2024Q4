@@ -313,7 +313,6 @@ body {
 .inner-container {
   max-width: 426px;
   padding: 60px 0;
-  margin: 0 auto;
 }
 
 a,
@@ -577,6 +576,7 @@ a {
   padding: 60px 0;
 }
 .cta__content-inner {
+  margin: 0 auto;
   color: #FFF;
   display: flex;
   flex-direction: column;
@@ -618,6 +618,87 @@ a {
   width: 1px;
   height: 20px;
   background-color: rgba(255, 255, 255, 0.4);
+}
+
+.footer__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 60px;
+}
+.footer__cards {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+}
+.footer__text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+}
+.footer__text-socials {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+}
+.footer__text-socials .social-item {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0px;
+}
+.footer__text-socials .social-item path {
+  transition-duration: 1s;
+}
+.footer__text-socials .social-item:hover {
+  cursor: pointer;
+}
+.footer__text-socials .social-item:hover path {
+  stroke: #FF4646;
+}
+.footer__text a:hover {
+  color: #FF4646;
+}
+
+.footer-card {
+  width: calc((100% - 24px) / 3);
+  border-radius: 20px;
+  background-color: #ECF3F8;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+}
+.footer-card-action, .footer-card-title {
+  transition-duration: 1s;
+}
+.footer-card-image {
+  width: 80px;
+  height: 80px;
+}
+.footer-card-image.card-phone {
+  background: url("/annaulazar-JSFE2024Q4/christmas-shop/svg/santa-claus.svg") center/cover no-repeat;
+}
+.footer-card-image.card-map {
+  background: url("/annaulazar-JSFE2024Q4/christmas-shop/svg/christmas-tree.svg") center/cover no-repeat;
+}
+.footer-card-image.card-mail {
+  background: url("/annaulazar-JSFE2024Q4/christmas-shop/svg/snake.svg") center/cover no-repeat;
+}
+.footer-card:hover .footer-card-action,
+.footer-card:hover .footer-card-title {
+  color: #FF4646;
 }
 
 /*# sourceMappingURL=style.css.map */
