@@ -372,7 +372,7 @@ a {
 }
 
 .hero {
-  background: url("/christmas-shop/images/bg-ball.png") center/cover no-repeat, url("/christmas-shop/images/bg-snow.png") center/cover no-repeat;
+  background: url("/annaulazar-JSFE2024Q4/christmas-shop/images/bg-ball.png") center/cover no-repeat, url("/annaulazar-JSFE2024Q4/christmas-shop/images/bg-snow.png") center/cover no-repeat;
   color: #FFF;
 }
 .hero__content {
@@ -388,7 +388,7 @@ a {
 }
 
 .about {
-  background: url("/christmas-shop/images/bg-snow.png") center/cover no-repeat;
+  background: url("/annaulazar-JSFE2024Q4/christmas-shop/images/bg-snow.png") center/cover no-repeat;
 }
 .about__content {
   background: #FFF;
