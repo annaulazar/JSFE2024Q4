@@ -372,7 +372,7 @@ a {
 }
 
 .hero {
-  background: url("/images/bg-ball.png") center/cover no-repeat, url("/images/bg-snow.png") center/cover no-repeat;
+  background: url("/christmas-shop/images/bg-ball.png") center/cover no-repeat, url("/christmas-shop/images/bg-snow.png") center/cover no-repeat;
   color: #FFF;
 }
 .hero__content {
@@ -388,7 +388,7 @@ a {
 }
 
 .about {
-  background: url("/images/bg-snow.png") center/cover no-repeat;
+  background: url("/christmas-shop/images/bg-snow.png") center/cover no-repeat;
 }
 .about__content {
   background: #FFF;
