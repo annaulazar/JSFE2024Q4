@@ -1,0 +1,11 @@
+.slider {
+  overflow: hidden;
+  background: $background-section;
+  color: $color-static-white;
+  &__content {
+    @include flex-column($gap: 20px);
+  }
+  &__text {
+    @include flex-column($gap: 12px);
+  }
+}

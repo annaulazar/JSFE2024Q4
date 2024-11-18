@@ -178,7 +178,8 @@ ul,
 ol,
 li,
 dl,
-dd {
+dd,
+button {
   margin: 0;
   padding: 0;
 }
@@ -287,7 +288,7 @@ body {
   font-size: 80px;
   font-weight: 600;
   line-height: 1.15;
-  letter-spacing: 0em;
+  letter-spacing: 0.004em;
   text-transform: uppercase;
 }
 
@@ -317,7 +318,7 @@ body {
 a,
 button,
 svg * {
-  transition-duration: 0.5s;
+  transition-duration: 1s;
 }
 
 a {
@@ -419,6 +420,153 @@ a {
   display: block;
   border-radius: 20px;
   width: 100%;
+}
+
+.slider {
+  overflow: hidden;
+  background: url("/annaulazar-JSFE2024Q4/christmas-shop/images/bg-snow.png") center/cover no-repeat;
+  color: #FFF;
+}
+.slider__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.slider__text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+}
+
+.button-arrow {
+  width: 56px;
+  height: 56px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  border: 1px solid #FFF;
+  background: none;
+}
+.button-arrow[disabled] {
+  border-color: rgba(255, 255, 255, 0.4);
+}
+.button-arrow[disabled] path {
+  stroke-opacity: 0.4;
+}
+.button-arrow:not([disabled]):hover {
+  background-color: #FFF;
+  cursor: pointer;
+}
+.button-arrow:not([disabled]):hover path {
+  stroke: #FF4646;
+}
+
+.slider-row {
+  align-self: flex-start;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 20px;
+}
+.slider-row-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+.slider-row-image img {
+  display: block;
+  border-radius: 20px;
+}
+
+.slider__buttons {
+  align-self: flex-end;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 20px;
+}
+
+.bestgifts {
+  overflow: hidden;
+  background: url("/annaulazar-JSFE2024Q4/christmas-shop/images/bg-snow.png") center/cover no-repeat;
+}
+.bestgifts__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.bestgifts__text {
+  color: #FFF;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+}
+.bestgifts__cards {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+}
+
+.card {
+  width: 310px;
+  height: 342px;
+  border-radius: 20px;
+  background-color: #ECF3F8;
+  transition-duration: 1s;
+}
+.card-image {
+  width: 100%;
+  height: 230px;
+}
+.card-text {
+  background-color: #FFF;
+  border-radius: 20px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 8px;
+  width: 100%;
+  height: 112px;
+}
+.card-title {
+  transition-duration: 1s;
+}
+.card[tag-name=for-work] .card-image {
+  background: url("/annaulazar-JSFE2024Q4/christmas-shop/images/gift-for-work.png") center/cover no-repeat;
+}
+.card[tag-name=for-work] .card-tag {
+  color: #4361FF;
+}
+.card[tag-name=for-health] .card-image {
+  background: url("/annaulazar-JSFE2024Q4/christmas-shop/images/gift-for-health.png") center/cover no-repeat;
+}
+.card[tag-name=for-health] .card-tag {
+  color: #06A44F;
+}
+.card[tag-name=for-harmony] .card-image {
+  background: url("/annaulazar-JSFE2024Q4/christmas-shop/images/gift-for-harmony.png") center/cover no-repeat;
+}
+.card[tag-name=for-harmony] .card-tag {
+  color: #FF43F7;
+}
+.card:hover {
+  cursor: pointer;
+}
+.card:hover .card-title {
+  color: #FF4646;
 }
 
 /*# sourceMappingURL=style.css.map */

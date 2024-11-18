@@ -1,4 +1,4 @@
-@mixin text($size, $weight, $height, $spacing, $transform: uppercase) {
+@mixin text($size, $weight, $height, $spacing: normal, $transform: uppercase) {
   font-size: $size;
   font-weight: $weight;
   line-height: $height;
@@ -20,3 +20,4 @@
   align-items: $ai;
   gap: $gap;
 }
+

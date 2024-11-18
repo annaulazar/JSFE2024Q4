@@ -1,0 +1,23 @@
+.button-arrow {
+  width: 56px;
+  height: 56px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: $border-radius;
+  border: 1px solid $color-static-white;
+  background: none;
+  &[disabled] {
+    border-color: $color-static-white-40;
+    path {
+      stroke-opacity: 0.4;
+    }
+  }
+  &:not([disabled]):hover {
+    background-color: $color-static-white;
+    cursor: pointer;
+    path {
+      stroke: $color-primary;
+    }
+  }
+}

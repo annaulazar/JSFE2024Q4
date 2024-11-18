@@ -11,9 +11,11 @@ $color-content-background: #ECF3F8;
 $color-overlay: rgba(24, 28, 41, 0.80);
 
 $background-section: url('/annaulazar-JSFE2024Q4/christmas-shop/images/bg-snow.png') center/cover no-repeat;
-$background-top: url('/annaulazar-JSFE2024Q4/christmas-shop/images/bg-ball.png') center/cover no-repeat, url('/annaulazar-JSFE2024Q4/christmas-shop/images/bg-snow.png') center/cover no-repeat;
-$background-bottom: url('../images/bg-forest.png') lightgray 50% / cover no-repeat, url('../images/bg-snow.png') lightgray 50% / cover no-repeat;
-$background-gifts: url('../images/bg-garland.png') lightgray 50% / cover no-repeat;
+$background-top: url('/annaulazar-JSFE2024Q4/christmas-shop/images/bg-ball.png') center/cover no-repeat,
+                 url('/annaulazar-JSFE2024Q4/christmas-shop/images/bg-snow.png') center/cover no-repeat;
+$background-bottom: url('/annaulazar-JSFE2024Q4/christmas-shop/images/bg-forest.png') center/cover no-repeat,
+                    url('/annaulazar-JSFE2024Q4/christmas-shop/images/bg-snow.png') center/cover no-repeat;
+$background-gifts: url('/annaulazar-JSFE2024Q4/christmas-shop/images/bg-garland.png') center/cover no-repeat;
 
 $base-width: 1440px;
 $container-width: 1276px;
@@ -26,4 +28,4 @@ $border-radius: 20px;
 $font-family-base: 'Montserrat', sans-serif;
 $font-family-capture: 'Allura', sans-serif;
 
-$transition-duration: 0.5s;
+$transition-duration: 1s;
