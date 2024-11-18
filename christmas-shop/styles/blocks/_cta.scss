@@ -1,0 +1,16 @@
+.cta {
+  background: $background-bottom;
+  &__content {
+    padding: $padding-y 0;
+    &-inner {
+      color: $color-static-white;
+      @include flex-column($gap: 20px);
+    }
+  }
+  &__title {
+    text-align: center;
+  }
+  &__timer {
+    @include flex-column($gap: 8px);
+  }
+}

@@ -313,6 +313,7 @@ body {
 .inner-container {
   max-width: 426px;
   padding: 60px 0;
+  margin: 0 auto;
 }
 
 a,
@@ -567,6 +568,56 @@ a {
 }
 .card:hover .card-title {
   color: #FF4646;
+}
+
+.cta {
+  background: url("/annaulazar-JSFE2024Q4/christmas-shop/images/bg-forest.png") center/cover no-repeat, url("/annaulazar-JSFE2024Q4/christmas-shop/images/bg-snow.png") center/cover no-repeat;
+}
+.cta__content {
+  padding: 60px 0;
+}
+.cta__content-inner {
+  color: #FFF;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.cta__title {
+  text-align: center;
+}
+.cta__timer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+
+.timer {
+  width: 344px;
+  height: 72px;
+  padding: 8px 12px 12px;
+  border-radius: 20px;
+  background-color: rgba(255, 255, 255, 0.4);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0px;
+}
+.timer-item {
+  width: 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0px;
+}
+.timer .separator {
+  width: 1px;
+  height: 20px;
+  background-color: rgba(255, 255, 255, 0.4);
 }
 
 /*# sourceMappingURL=style.css.map */
