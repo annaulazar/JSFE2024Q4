@@ -356,7 +356,7 @@ a {
 .header__menu-link {
   padding: 12px 20px;
 }
-.header__menu-link:hover {
+.header__menu-link:hover, .header__menu-link.active-link {
   color: #FF4646;
   background-color: rgba(255, 70, 70, 0.1);
   border-radius: 12px;
