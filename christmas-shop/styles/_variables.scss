@@ -10,13 +10,14 @@ $color-tag-green: #06A44F;
 $color-content-background: #ECF3F8;
 $color-overlay: rgba(24, 28, 41, 0.80);
 
-$background-section: url('../images/bg-snow.png') lightgray 50% / cover no-repeat;
+$background-section: url('/images/bg-snow.png') center/cover no-repeat;
 $background-top: url('/images/bg-ball.png') center/cover no-repeat, url('/images/bg-snow.png') center/cover no-repeat;
 $background-bottom: url('../images/bg-forest.png') lightgray 50% / cover no-repeat, url('../images/bg-snow.png') lightgray 50% / cover no-repeat;
 $background-gifts: url('../images/bg-garland.png') lightgray 50% / cover no-repeat;
 
 $base-width: 1440px;
 $container-width: 1276px;
+$inner-container-width: 426px;
 $padding-x: 8px;
 $padding-y: 60px;
 

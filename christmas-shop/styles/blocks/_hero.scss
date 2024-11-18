@@ -3,9 +3,7 @@
   color: $color-static-white;
   &__content {
     @include flex-column($gap: 12px);
-    max-width: 430px;
     margin: 0 auto;
-    padding: $padding-y 0;
   }
   &__title {
     text-align: center;

@@ -9,7 +9,7 @@ body {
 }
 
 .header1 {
-  @include text(32px, 600, 1.5, 0.18em);
+  @include text(32px, 600, 1.5, 0.175em);
 }
 
 .header2 {
@@ -54,13 +54,18 @@ body {
   padding: 0 $padding-x;
 }
 
-.section__container {
+.section-container {
   padding: $padding-y $padding-x;
 }
 
 .content {
   max-width: $container-width;
   margin: 0 auto;
+}
+
+.inner-container {
+  max-width: $inner-container-width;
+  padding: $padding-y 0;
 }
 
 a,
