@@ -1,0 +1,32 @@
+.footer {
+  &__content {
+    @include flex-column($gap: 60px);
+  }
+  &__cards {
+    width: 100%;
+    @include flex-row($gap: 12px);
+  }
+  &__text {
+    @include flex-column($gap: 12px);
+    &-socials {
+      @include flex-row($jc: center, $gap: 12px);
+      .social-item {
+        width: 40px;
+        height: 40px;
+        @include flex-column();
+        path {
+          transition-duration: $transition-duration;
+        }
+        &:hover {
+          cursor: pointer;
+          path {
+            stroke: $color-primary;
+          }
+        }
+      }
+    }
+    a:hover {
+      color: $color-primary;
+    }
+  }
+}

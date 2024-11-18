@@ -1,0 +1,17 @@
+.timer {
+  width: 344px;
+  height: 72px;
+  padding: 8px 12px 12px;
+  border-radius: $border-radius;
+  background-color: $color-static-white-40;
+  @include flex-row();
+  &-item {
+    width: 80px;
+    @include flex-column();
+  }
+  .separator {
+    width: 1px;
+    height: 20px;
+    background-color: $color-static-white-40;
+  }
+}

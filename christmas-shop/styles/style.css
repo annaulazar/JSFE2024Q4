@@ -356,7 +356,7 @@ a {
 .header__menu-link {
   padding: 12px 20px;
 }
-.header__menu-link:hover {
+.header__menu-link:hover, .header__menu-link.active-link {
   color: #FF4646;
   background-color: rgba(255, 70, 70, 0.1);
   border-radius: 12px;
@@ -566,6 +566,138 @@ a {
   cursor: pointer;
 }
 .card:hover .card-title {
+  color: #FF4646;
+}
+
+.cta {
+  background: url("/annaulazar-JSFE2024Q4/christmas-shop/images/bg-forest.png") center/cover no-repeat, url("/annaulazar-JSFE2024Q4/christmas-shop/images/bg-snow.png") center/cover no-repeat;
+}
+.cta__content {
+  padding: 60px 0;
+}
+.cta__content-inner {
+  margin: 0 auto;
+  color: #FFF;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.cta__title {
+  text-align: center;
+}
+.cta__timer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+
+.timer {
+  width: 344px;
+  height: 72px;
+  padding: 8px 12px 12px;
+  border-radius: 20px;
+  background-color: rgba(255, 255, 255, 0.4);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0px;
+}
+.timer-item {
+  width: 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0px;
+}
+.timer .separator {
+  width: 1px;
+  height: 20px;
+  background-color: rgba(255, 255, 255, 0.4);
+}
+
+.footer__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 60px;
+}
+.footer__cards {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+}
+.footer__text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+}
+.footer__text-socials {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+}
+.footer__text-socials .social-item {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0px;
+}
+.footer__text-socials .social-item path {
+  transition-duration: 1s;
+}
+.footer__text-socials .social-item:hover {
+  cursor: pointer;
+}
+.footer__text-socials .social-item:hover path {
+  stroke: #FF4646;
+}
+.footer__text a:hover {
+  color: #FF4646;
+}
+
+.footer-card {
+  width: calc((100% - 24px) / 3);
+  border-radius: 20px;
+  background-color: #ECF3F8;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+}
+.footer-card-action, .footer-card-title {
+  transition-duration: 1s;
+}
+.footer-card-image {
+  width: 80px;
+  height: 80px;
+}
+.footer-card-image.card-phone {
+  background: url("/annaulazar-JSFE2024Q4/christmas-shop/svg/santa-claus.svg") center/cover no-repeat;
+}
+.footer-card-image.card-map {
+  background: url("/annaulazar-JSFE2024Q4/christmas-shop/svg/christmas-tree.svg") center/cover no-repeat;
+}
+.footer-card-image.card-mail {
+  background: url("/annaulazar-JSFE2024Q4/christmas-shop/svg/snake.svg") center/cover no-repeat;
+}
+.footer-card:hover .footer-card-action,
+.footer-card:hover .footer-card-title {
   color: #FF4646;
 }
 

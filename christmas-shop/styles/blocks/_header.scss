@@ -13,7 +13,8 @@
     }
     &-link {
       padding: 12px 20px;
-      &:hover {
+      &:hover,
+      &.active-link {
         color: $color-primary;
         background-color: $color-primary-10;
         border-radius: 12px;
