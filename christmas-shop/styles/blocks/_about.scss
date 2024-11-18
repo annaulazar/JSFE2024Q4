@@ -1,0 +1,26 @@
+.about {
+  background: $background-section;
+  &__content {
+    background: $color-static-white;
+    border-radius: $border-radius;
+    @include flex-row();
+  }
+  &__text {
+    width: 50%;
+    padding: 0 60px;
+  }
+  &__article {
+    @include flex-column($ai: flex-start, $gap: 20px);
+    &-title {
+      color: $color-primary;
+    }
+  }
+  &__image {
+    width: 50%;
+    img {
+      display: block;
+      border-radius: $border-radius;
+      width:  100%;
+    }
+  }
+}
