@@ -1,0 +1,31 @@
+.gifts {
+  background: $background-gifts;
+  color: $color-static-white;
+  &__content {
+    @include flex-column($gap: 20px);
+  }
+  &__title {
+    color: $color-static-white;
+    max-width: $inner-container-width;
+    text-align: center;
+  }
+  &__menu {
+    color: $color-static-white;
+    &-list {
+      @include flex-row($gap: 8px);
+    }
+    &-link {
+      padding: 12px 20px;
+      &:hover,
+      &.active-link {
+        background-color: $color-static-white-20;
+        border-radius: 12px;
+      }
+    }
+  }
+  &__cards {
+    @include flex-row($gap: 12px);
+    flex-wrap: wrap;
+    row-gap: 12px;
+  }
+}
