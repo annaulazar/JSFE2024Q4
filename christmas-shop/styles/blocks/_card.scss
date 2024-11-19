@@ -20,7 +20,7 @@
     transition-duration: $transition-duration;
     color: $color-dark;
   }
-  &[tag-name="for-work"] {
+  &.for-work {
     .card-image {
       background: url('/annaulazar-JSFE2024Q4/christmas-shop/images/gift-for-work.png') center/cover no-repeat;
     }
@@ -28,7 +28,7 @@
       color: $color-tag-purple;
     }
   }
-  &[tag-name="for-health"] {
+  &.for-health {
     .card-image {
       background: url('/annaulazar-JSFE2024Q4/christmas-shop/images/gift-for-health.png') center/cover no-repeat;
     }
@@ -36,7 +36,7 @@
       color: $color-tag-green;
     }
   }
-  &[tag-name="for-harmony"] {
+  &.for-harmony {
     .card-image {
       background: url('/annaulazar-JSFE2024Q4/christmas-shop/images/gift-for-harmony.png') center/cover no-repeat;
     }

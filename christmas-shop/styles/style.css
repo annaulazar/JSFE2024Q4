@@ -715,22 +715,22 @@ a {
   transition-duration: 1s;
   color: #181C29;
 }
-.card[tag-name=for-work] .card-image {
+.card.for-work .card-image {
   background: url("/annaulazar-JSFE2024Q4/christmas-shop/images/gift-for-work.png") center/cover no-repeat;
 }
-.card[tag-name=for-work] .card-tag {
+.card.for-work .card-tag {
   color: #4361FF;
 }
-.card[tag-name=for-health] .card-image {
+.card.for-health .card-image {
   background: url("/annaulazar-JSFE2024Q4/christmas-shop/images/gift-for-health.png") center/cover no-repeat;
 }
-.card[tag-name=for-health] .card-tag {
+.card.for-health .card-tag {
   color: #06A44F;
 }
-.card[tag-name=for-harmony] .card-image {
+.card.for-harmony .card-image {
   background: url("/annaulazar-JSFE2024Q4/christmas-shop/images/gift-for-harmony.png") center/cover no-repeat;
 }
-.card[tag-name=for-harmony] .card-tag {
+.card.for-harmony .card-tag {
   color: #FF43F7;
 }
 .card:hover {
