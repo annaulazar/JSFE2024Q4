@@ -318,7 +318,7 @@ body {
 a,
 button,
 svg * {
-  transition-duration: 1s;
+  transition-duration: 0.7s;
 }
 
 a {
@@ -606,7 +606,7 @@ a {
   gap: 0px;
 }
 .footer__text-socials .social-item path {
-  transition-duration: 1s;
+  transition-duration: 0.7s;
 }
 .footer__text-socials .social-item:hover {
   cursor: pointer;
@@ -630,7 +630,7 @@ a {
   gap: 12px;
 }
 .footer-card-action, .footer-card-title {
-  transition-duration: 1s;
+  transition-duration: 0.7s;
 }
 .footer-card-image {
   width: 80px;
@@ -693,7 +693,7 @@ a {
   height: 342px;
   border-radius: 20px;
   background-color: #ECF3F8;
-  transition-duration: 1s;
+  transition-duration: 0.7s;
 }
 .card-image {
   width: 100%;
@@ -712,7 +712,7 @@ a {
   height: 112px;
 }
 .card-title {
-  transition-duration: 1s;
+  transition-duration: 0.7s;
   color: #181C29;
 }
 .card.for-work .card-image {
