@@ -5,16 +5,15 @@
     @include flex-column($gap: 20px);
   }
   &__title {
-    color: $color-static-white;
     max-width: $inner-container-width;
     text-align: center;
   }
   &__menu {
-    color: $color-static-white;
     &-list {
       @include flex-row($gap: 8px);
     }
     &-link {
+      display: inline-block;
       padding: 12px 20px;
       &:hover,
       &.active-link {

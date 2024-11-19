@@ -651,7 +651,7 @@ a {
 }
 
 .gifts {
-  background: url("/annaulazar-JSFE2024Q4/christmas-shop/images/bg-garland.png") top no-repeat;
+  background: url("/annaulazar-JSFE2024Q4/christmas-shop/images/bg-garland.png") top/contain no-repeat;
   color: #FFF;
 }
 .gifts__content {
@@ -662,12 +662,8 @@ a {
   gap: 20px;
 }
 .gifts__title {
-  color: #FFF;
   max-width: 426px;
   text-align: center;
-}
-.gifts__menu {
-  color: #FFF;
 }
 .gifts__menu-list {
   display: flex;
@@ -676,6 +672,7 @@ a {
   gap: 8px;
 }
 .gifts__menu-link {
+  display: inline-block;
   padding: 12px 20px;
 }
 .gifts__menu-link:hover, .gifts__menu-link.active-link {
@@ -695,7 +692,6 @@ a {
   width: 310px;
   height: 342px;
   border-radius: 20px;
-  color: #181C29;
   background-color: #ECF3F8;
   transition-duration: 1s;
 }
@@ -717,6 +713,7 @@ a {
 }
 .card-title {
   transition-duration: 1s;
+  color: #181C29;
 }
 .card[tag-name=for-work] .card-image {
   background: url("/annaulazar-JSFE2024Q4/christmas-shop/images/gift-for-work.png") center/cover no-repeat;

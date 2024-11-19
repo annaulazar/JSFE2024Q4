@@ -15,7 +15,7 @@ $background-top: url('/annaulazar-JSFE2024Q4/christmas-shop/images/bg-ball.png')
                  url('/annaulazar-JSFE2024Q4/christmas-shop/images/bg-snow.png') center/cover no-repeat;
 $background-bottom: url('/annaulazar-JSFE2024Q4/christmas-shop/images/bg-forest.png') center/cover no-repeat,
                     url('/annaulazar-JSFE2024Q4/christmas-shop/images/bg-snow.png') center/cover no-repeat;
-$background-gifts: url('/annaulazar-JSFE2024Q4/christmas-shop/images/bg-garland.png') top no-repeat;
+$background-gifts: url('/annaulazar-JSFE2024Q4/christmas-shop/images/bg-garland.png') top/contain no-repeat;
 
 $base-width: 1440px;
 $container-width: 1276px;
