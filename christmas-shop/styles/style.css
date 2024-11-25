@@ -356,7 +356,14 @@ a {
 .header__menu-link {
   padding: 12px 20px;
 }
-.header__menu-link:hover, .header__menu-link.active-link {
+@media (hover: hover) {
+  .header__menu-link:hover {
+    color: #FF4646;
+    background-color: rgba(255, 70, 70, 0.1);
+    border-radius: 12px;
+  }
+}
+.header__menu-link.active-link {
   color: #FF4646;
   background-color: rgba(255, 70, 70, 0.1);
   border-radius: 12px;
@@ -372,9 +379,11 @@ a {
   border-radius: 20px;
   background-color: #181C29;
 }
-.button:hover {
-  color: #181C29;
-  background-color: #FFF;
+@media (hover: hover) {
+  .button:hover {
+    color: #181C29;
+    background-color: #FFF;
+  }
 }
 
 .burger {
@@ -511,12 +520,14 @@ a {
 .button-arrow[disabled] path {
   stroke-opacity: 0.4;
 }
-.button-arrow:not([disabled]):hover {
-  background-color: #FFF;
-  cursor: pointer;
-}
-.button-arrow:not([disabled]):hover path {
-  stroke: #FF4646;
+@media (hover: hover) {
+  .button-arrow:not([disabled]):hover {
+    background-color: #FFF;
+    cursor: pointer;
+  }
+  .button-arrow:not([disabled]):hover path {
+    stroke: #FF4646;
+  }
 }
 
 .slider-row {
@@ -671,14 +682,18 @@ a {
 .footer__text-socials .social-item path {
   transition-duration: 0.7s;
 }
-.footer__text-socials .social-item:hover {
-  cursor: pointer;
+@media (hover: hover) {
+  .footer__text-socials .social-item:hover {
+    cursor: pointer;
+  }
+  .footer__text-socials .social-item:hover path {
+    stroke: #FF4646;
+  }
 }
-.footer__text-socials .social-item:hover path {
-  stroke: #FF4646;
-}
-.footer__text a:hover {
-  color: #FF4646;
+@media (hover: hover) {
+  .footer__text a:hover {
+    color: #FF4646;
+  }
 }
 
 .footer-card {
@@ -713,9 +728,11 @@ a {
 .footer-card-image.card-mail {
   background: url("/annaulazar-JSFE2024Q4/christmas-shop/svg/snake.svg") center/cover no-repeat;
 }
-.footer-card:hover .footer-card-action,
-.footer-card:hover .footer-card-title {
-  color: #FF4646;
+@media (hover: hover) {
+  .footer-card:hover .footer-card-action,
+  .footer-card:hover .footer-card-title {
+    color: #FF4646;
+  }
 }
 
 .gifts {
@@ -801,11 +818,13 @@ a {
 .card.for-harmony .card-tag {
   color: #FF43F7;
 }
-.card:hover {
-  cursor: pointer;
-}
-.card:hover .card-title {
-  color: #FF4646;
+@media (hover: hover) {
+  .card:hover {
+    cursor: pointer;
+  }
+  .card:hover .card-title {
+    color: #FF4646;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

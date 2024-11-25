@@ -24,7 +24,7 @@
       background: url('/annaulazar-JSFE2024Q4/christmas-shop/svg/snake.svg') center/cover no-repeat;
     }
   }
-  &:hover {
+  @include hover {
     .footer-card-action,
     .footer-card-title {
       color: $color-primary;

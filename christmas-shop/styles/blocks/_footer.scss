@@ -20,7 +20,7 @@
         path {
           transition-duration: $transition-duration;
         }
-        &:hover {
+        @include hover {
           cursor: pointer;
           path {
             stroke: $color-primary;
@@ -28,8 +28,10 @@
         }
       }
     }
-    a:hover {
-      color: $color-primary;
+    a {
+      @include hover {
+        color: $color-primary;
+      }
     }
   }
 }
