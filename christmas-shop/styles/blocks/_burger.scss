@@ -1,0 +1,15 @@
+.burger {
+  width: 40px;
+  height: 40px;
+  @include reset_button;
+  display: none;
+  @include tablet {
+    @include flex-column($gap: 6px);
+  }
+  &-item {
+    display: inline-block;
+    width: 50%;
+    height: 2px;
+    background-color: $color-dark;
+  }
+}

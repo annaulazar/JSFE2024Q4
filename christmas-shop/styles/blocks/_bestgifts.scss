@@ -9,6 +9,7 @@
     @include flex-column($gap: 12px);
   }
   &__cards {
-    @include flex-row($gap: 12px);
+    @include flex-row($jc: center, $gap: 12px);
+    flex-wrap: wrap;
   }
 }

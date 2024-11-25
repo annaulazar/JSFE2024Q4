@@ -13,12 +13,19 @@
     }
     &-link {
       padding: 12px 20px;
-      &:hover,
+      @include hover {
+        color: $color-primary;
+        background-color: $color-primary-10;
+        border-radius: 12px;
+      }
       &.active-link {
         color: $color-primary;
         background-color: $color-primary-10;
         border-radius: 12px;
       }
+    }
+    @include tablet {
+      display: none;
     }
   }
 }

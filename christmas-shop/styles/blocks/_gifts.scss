@@ -11,11 +11,20 @@
   &__menu {
     &-list {
       @include flex-row($gap: 8px);
+      @include big-phone {
+        gap: 0px;
+      }
     }
     &-link {
       display: inline-block;
       padding: 12px 20px;
-      &:hover,
+      @include big-phone {
+        padding: 12px 8px;
+      }
+      @include hover {
+        background-color: $color-static-white-20;
+        border-radius: 12px;
+      }
       &.active-link {
         background-color: $color-static-white-20;
         border-radius: 12px;
@@ -23,7 +32,7 @@
     }
   }
   &__cards {
-    @include flex-row($gap: 12px);
+    @include flex-row($jc: center, $gap: 12px);
     flex-wrap: wrap;
     row-gap: 12px;
   }

@@ -4,10 +4,17 @@
     background: $color-static-white;
     border-radius: $border-radius;
     @include flex-row();
+    @include big-phone {
+      @include flex-column();
+    }
   }
   &__text {
     width: 50%;
     padding: 0 60px;
+    @include big-phone {
+      width: 100%;
+      padding: 0 20px;
+    }
   }
   &__article {
     @include flex-column($ai: flex-start, $gap: 20px);
@@ -17,10 +24,15 @@
   }
   &__image {
     width: 50%;
+    @include flex-row($jc: center);
+    border-radius: $border-radius;
+    overflow: hidden;
+    @include big-phone {
+      width: 100%;
+    }
     img {
       display: block;
-      border-radius: $border-radius;
-      width:  100%;
+      height:  100%;
     }
   }
 }
