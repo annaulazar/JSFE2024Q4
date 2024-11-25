@@ -1,0 +1,22 @@
+$laptop-width: 1060px;
+$tablet-width: 768px;
+$big-phone-width: 600px;
+
+
+@mixin laptop {
+  @media (max-width: $laptop-width) { @content; }
+}
+
+@mixin tablet {
+  @media (max-width: $tablet-width) { @content; }
+}
+
+@mixin big-phone {
+  @media (max-width: $big-phone-width) { @content; }
+}
+
+@mixin hover {
+  @media (hover: hover) {
+    &:hover { @content; }
+  }
+}

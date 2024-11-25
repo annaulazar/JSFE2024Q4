@@ -4,6 +4,9 @@
   background-color: $color-content-background;
   padding: 20px;
   @include flex-column($gap:12px);
+  @include laptop {
+    width: 100%;
+  }
   &-action,
   &-title {
     transition-duration: $transition-duration;

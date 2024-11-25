@@ -361,6 +361,11 @@ a {
   background-color: rgba(255, 70, 70, 0.1);
   border-radius: 12px;
 }
+@media (max-width: 768px) {
+  .header__menu {
+    display: none;
+  }
+}
 
 .button {
   padding: 20px 32px;
@@ -370,6 +375,29 @@ a {
 .button:hover {
   color: #181C29;
   background-color: #FFF;
+}
+
+.burger {
+  width: 40px;
+  height: 40px;
+  background-color: transparent;
+  border: none;
+  display: none;
+}
+@media (max-width: 768px) {
+  .burger {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+  }
+}
+.burger-item {
+  display: inline-block;
+  width: 50%;
+  height: 2px;
+  background-color: #181C29;
 }
 
 .hero {
@@ -399,9 +427,24 @@ a {
   align-items: center;
   gap: 0px;
 }
+@media (max-width: 600px) {
+  .about__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0px;
+  }
+}
 .about__text {
   width: 50%;
   padding: 0 60px;
+}
+@media (max-width: 600px) {
+  .about__text {
+    width: 100%;
+    padding: 0 20px;
+  }
 }
 .about__article {
   display: flex;
@@ -415,11 +458,21 @@ a {
 }
 .about__image {
   width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0px;
+  border-radius: 20px;
+  overflow: hidden;
+}
+@media (max-width: 600px) {
+  .about__image {
+    width: 100%;
+  }
 }
 .about__image img {
   display: block;
-  border-radius: 20px;
-  width: 100%;
+  height: 100%;
 }
 
 .slider {
@@ -513,9 +566,10 @@ a {
 }
 .bestgifts__cards {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   gap: 12px;
+  flex-wrap: wrap;
 }
 
 .cta {
@@ -583,6 +637,15 @@ a {
   align-items: center;
   gap: 12px;
 }
+@media (max-width: 1060px) {
+  .footer__cards {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+  }
+}
 .footer__text {
   display: flex;
   flex-direction: column;
@@ -628,6 +691,11 @@ a {
   justify-content: center;
   align-items: center;
   gap: 12px;
+}
+@media (max-width: 1060px) {
+  .footer-card {
+    width: 100%;
+  }
 }
 .footer-card-action, .footer-card-title {
   transition-duration: 0.7s;
