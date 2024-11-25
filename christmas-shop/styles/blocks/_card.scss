@@ -44,7 +44,7 @@
       color: $color-tag-pink;
     }
   }
-  &:hover {
+  @include hover {
     cursor: pointer;
     .card-title {
       color: $color-primary;
