@@ -48,6 +48,7 @@ body {
 .container {
   max-width: $base-width;
   margin: 0 auto;
+  overflow: hidden;
 }
 
 .header__container {
@@ -82,4 +83,12 @@ a {
 .main {
   background-color: $color-primary;
   border-radius: $border-radius;
+}
+
+body {
+  width: 100%;
+  transition: position 1s;
+  &.body-fixed {
+    position: fixed;
+  }
 }
