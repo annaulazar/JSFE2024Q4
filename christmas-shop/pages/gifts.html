@@ -26,7 +26,7 @@
                     <li class="header__menu-item"><a href="#contacts" class="header__menu-link action-small">Contacts</a></li>
                 </ul>
             </nav>
-            <button class="burger">
+            <button class="burger" type="button" onclick="burgerMenu()" id="burger-button">
                 <span class="burger-item"></span>
                 <span class="burger-item"></span>
             </button>
@@ -214,5 +214,18 @@
         </div>
     </div>
 </footer>
+<dialog class="burger-menu" id="burger-menu">
+    <ul class="header__menu-list">
+        <li class="header__menu-item"><a class="header__menu-link action-large" onclick="burgerMenu()">
+            Gifts</a></li>
+        <li class="header__menu-item"><a href="../index.html#about" class="header__menu-link action-large"
+                                         onclick="burgerMenu()">About</a></li>
+        <li class="header__menu-item"><a href="../index.html#best" class="header__menu-link action-large"
+                                         onclick="burgerMenu()">Best</a></li>
+        <li class="header__menu-item"><a href="#contacts" class="header__menu-link action-large"
+                                         onclick="burgerMenu()">Contacts</a></li>
+    </ul>
+</dialog>
+<script src="../js/main.js"></script>
 </body>
 </html>

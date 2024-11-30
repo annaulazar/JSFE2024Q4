@@ -1,0 +1,18 @@
+.burger-menu {
+  position: absolute;
+  top: 60px;
+  transform: translate(100%, 0);
+  transition: $transition-duration;
+  @include flex-column();
+  width: 100%;
+  height: 100%;
+  border: none;
+  .header__menu-list {
+    position: relative;
+    top: -28px;
+    @include flex-column($gap: 32px);
+  }
+  &.show_menu {
+    transform: translate(0, 0);
+  }
+}
