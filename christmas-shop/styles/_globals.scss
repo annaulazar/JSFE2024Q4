@@ -96,4 +96,8 @@ body {
   &.body-fixed {
     position: fixed;
   }
+  &.modal-open {
+    overflow: hidden;
+    background-color: $color-overlay;
+  }
 }

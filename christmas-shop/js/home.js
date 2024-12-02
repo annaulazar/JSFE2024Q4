@@ -1,16 +1,11 @@
-import {GIFTS} from "./gifts_data.js";
+import {GIFTS, TAGS} from "./gifts_data.js";
 
 const days = document.querySelector('#days')
 const hours = document.querySelector('#hours')
 const minutes = document.querySelector('#minutes')
 const seconds = document.querySelector('#seconds')
-const cardsItems = document.querySelector('.bestgifts__cards');
+const cardsItems = document.querySelector('.gifts__cards');
 
-const tags = {
-    "For Work": "for-work",
-    "For Health": "for-health",
-    "For Harmony": "for-harmony",
-};
 
 function timerNewYear() {
     let curentData = new Date()
@@ -30,8 +25,8 @@ function timerNewYear() {
 
 function createCard(cardObj) {
     const card = document.createElement('div');
-    card.classList = 'bestgifts__cards-item card';
-    card.classList.add(tags[cardObj.category]);
+    card.classList = 'gifts__cards-item card';
+    card.classList.add(TAGS[cardObj.category]);
     const content = `<div class="card-image"></div>
                     <div class="card-text">
                         <div class="card-tag header4">${cardObj.category}</div>

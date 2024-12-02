@@ -1,3 +1,9 @@
+export const TAGS = {
+  "For Work": "for-work",
+  "For Health": "for-health",
+  "For Harmony": "for-harmony",
+};
+
 export const GIFTS = [
   {
     "name": "Bug Magnet",

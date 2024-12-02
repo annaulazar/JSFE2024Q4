@@ -344,6 +344,10 @@ body {
 body.body-fixed {
   position: fixed;
 }
+body.modal-open {
+  overflow: hidden;
+  background-color: rgba(24, 28, 41, 0.8);
+}
 
 .header {
   padding: 12px 0;
@@ -833,7 +837,7 @@ body.body-fixed {
   align-items: flex-start;
   gap: 8px;
   width: 100%;
-  height: 112px;
+  height: calc(100% - 230px);
 }
 .card-title {
   transition-duration: 0.7s;
@@ -917,6 +921,77 @@ body.body-fixed {
     align-items: center;
     gap: 0px;
   }
+}
+
+.card_modal {
+  width: auto;
+  height: auto;
+  max-width: 400px;
+  position: fixed;
+  z-index: 2;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.card_modal .card-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: stretch;
+  gap: 20px;
+}
+.card_modal .card-text-top {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 8px;
+}
+.card_modal .superpowers {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: stretch;
+  gap: 8px;
+}
+.card_modal .superpowers-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: stretch;
+  gap: 0px;
+  align-content: space-between;
+}
+.card_modal .superpowers-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+}
+.card_modal .superpowers-name {
+  flex-grow: 2;
+}
+.card_modal .superpowers-snows {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px;
+}
+.card_modal .superpowers-snows .snow {
+  width: 16px;
+  height: 16px;
+  background: url("/annaulazar-JSFE2024Q4/christmas-shop/svg/snowflake-sm-l.svg");
+}
+
+.modal-fon {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(24, 28, 41, 0.8);
+  z-index: 1;
+  display: none;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -1,18 +1,13 @@
-import {GIFTS} from "./gifts_data.js";
+import {GIFTS, TAGS} from "./gifts_data.js";
 
 const giftsMenu = document.querySelector('.gifts__menu');
 const cardsItems = document.querySelector('.gifts__cards');
 const buttonUp = document.querySelector('.button_up')
-const tags = {
-    "For Work": "for-work",
-    "For Health": "for-health",
-    "For Harmony": "for-harmony",
-};
 
 function createCard(cardObj) {
     const card = document.createElement('div');
     card.classList = 'gifts__cards-item card';
-    card.classList.add(tags[cardObj.category]);
+    card.classList.add(TAGS[cardObj.category]);
     const content = `<div class="card-image"></div>
                     <div class="card-text">
                         <div class="card-tag header4">${cardObj.category}</div>

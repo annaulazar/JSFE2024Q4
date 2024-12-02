@@ -1,0 +1,49 @@
+.card_modal {
+  width: auto;
+  height: auto;
+  max-width: 400px;
+  position: fixed;
+  z-index: 2;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  .card-text {
+    @include flex-column(flex-start, stretch, 20px);
+    &-top {
+      @include flex-column(flex-start, flex-start, 8px);
+    }
+  }
+  .superpowers {
+    @include flex-column(flex-start, stretch, 8px);
+    &-list {
+      @include flex-column(flex-start, stretch);
+      //align-items: stretch;
+      align-content: space-between;
+    }
+    &-item {
+      @include flex-row($gap: 12px);
+    }
+    &-name {
+      flex-grow: 2;
+    }
+    &-snows {
+      @include flex-row($gap: 8px);
+      .snow {
+        width: 16px;
+        height: 16px;
+        background: url('/annaulazar-JSFE2024Q4/christmas-shop/svg/snowflake-sm-l.svg');
+      }
+    }
+  }
+}
+
+.modal-fon {
+  position:fixed;
+  top:0;
+  left:0;
+  width:100vw;
+  height:100vh;
+  background-color: $color-overlay;
+  z-index: 1;
+  display: none;
+}
