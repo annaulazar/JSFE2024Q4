@@ -3,12 +3,6 @@ const cardsItems = document.querySelector('.gifts__cards');
 const body = document.querySelector('body');
 const modalFon = document.querySelector('.modal-fon')
 
-function burgerMenu() {
-    document.getElementById('burger-menu').classList.toggle('show_menu')
-    document.getElementById('burger-button').classList.toggle('burger-rotated')
-    body.classList.toggle('body-fixed')
-}
-
 function getGiftItem(target) {
     let item;
     if (target.classList.contains('card-tag') || target.classList.contains('card-title')) {
@@ -94,3 +88,4 @@ function closeModalCard() {
 
 cardsItems.addEventListener('click', openModalCard)
 modalFon.addEventListener('click', closeModalCard)
+
