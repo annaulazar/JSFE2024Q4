@@ -20,8 +20,3 @@
   align-items: $ai;
   gap: $gap;
 }
-
-@mixin reset_button {
-  background-color: transparent;
-  border: none;
-}

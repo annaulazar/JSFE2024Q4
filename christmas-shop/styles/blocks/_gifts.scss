@@ -16,18 +16,21 @@
       }
     }
     &-link {
+      color: $color-static-white;
       display: inline-block;
       padding: 12px 20px;
       @include big-phone {
         padding: 12px 8px;
       }
       @include hover {
+        cursor: pointer;
         background-color: $color-static-white-20;
         border-radius: 12px;
       }
       &.active-link {
         background-color: $color-static-white-20;
         border-radius: 12px;
+        cursor: default;
       }
     }
   }

@@ -327,6 +327,11 @@ a {
   color: inherit;
 }
 
+button {
+  background-color: transparent;
+  border: none;
+}
+
 .main {
   background-color: #FF4646;
   border-radius: 20px;
@@ -398,8 +403,6 @@ body.body-fixed {
 .burger {
   width: 40px;
   height: 40px;
-  background-color: transparent;
-  border: none;
   display: none;
 }
 @media (max-width: 768px) {
@@ -779,6 +782,7 @@ body.body-fixed {
   }
 }
 .gifts__menu-link {
+  color: #FFF;
   display: inline-block;
   padding: 12px 20px;
 }
@@ -789,6 +793,7 @@ body.body-fixed {
 }
 @media (hover: hover) {
   .gifts__menu-link:hover {
+    cursor: pointer;
     background-color: rgba(255, 255, 255, 0.2);
     border-radius: 12px;
   }
@@ -796,6 +801,7 @@ body.body-fixed {
 .gifts__menu-link.active-link {
   background-color: rgba(255, 255, 255, 0.2);
   border-radius: 12px;
+  cursor: default;
 }
 .gifts__cards {
   display: flex;

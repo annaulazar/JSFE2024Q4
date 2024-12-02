@@ -80,6 +80,11 @@ a {
   color: inherit;
 }
 
+button {
+  background-color: transparent;
+  border: none;
+}
+
 .main {
   background-color: $color-primary;
   border-radius: $border-radius;
