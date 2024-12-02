@@ -861,7 +861,6 @@ body.body-fixed {
 }
 
 .burger-menu {
-  overflow: hidden;
   position: fixed;
   top: 60px;
   display: flex;
@@ -886,6 +885,11 @@ body.body-fixed {
 }
 .burger-menu.show_menu {
   transform: translate(0, 0);
+}
+@media (min-width: 769px) {
+  .burger-menu {
+    display: none;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

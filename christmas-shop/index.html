@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="styles/style.css">
   <link rel="shortcut icon" href="/annaulazar-JSFE2024Q4/christmas-shop/images/santa-48.ico" type="image/x-icon">
+  <script src="./js/main.js" defer></script>
   <title>Christmas Shop</title>
 </head>
 <body>
@@ -33,6 +34,7 @@
 </header>
 
 <main class="main container">
+
   <section class="hero section-container">
       <div class="hero__content inner-container">
         <span class="caption">Merry Christmas</span>
@@ -155,22 +157,22 @@
           <div class="cta__timer-title caption">The New Year is Coming Soon...</div>
           <div class="timer">
             <div class="timer-item">
-              <div class="timer-value header2">47</div>
+              <div class="timer-value header2" id="days">0</div>
               <div class="timer-units header4">days</div>
             </div>
             <div class="separator"></div>
             <div class="timer-item">
-              <div class="timer-value header2">5</div>
+              <div class="timer-value header2" id="hours">0</div>
               <div class="timer-units header4">hours</div>
             </div>
             <div class="separator"></div>
             <div class="timer-item">
-              <div class="timer-value header2">34</div>
+              <div class="timer-value header2" id="minutes">0</div>
               <div class="timer-units header4">minutes</div>
             </div>
             <div class="separator"></div>
             <div class="timer-item">
-              <div class="timer-value header2">12</div>
+              <div class="timer-value header2" id="seconds">0</div>
               <div class="timer-units header4">seconds</div>
             </div>
           </div>
@@ -180,6 +182,7 @@
   </section>
 
 </main>
+
 <footer class="footer" id="contacts">
   <div class="section-container container">
     <div class="footer__content content">
@@ -265,6 +268,6 @@
       Contacts</a></li>
   </ul>
 </dialog>
-<script src="./js/main.js"></script>
+
 </body>
 </html>

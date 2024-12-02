@@ -1,5 +1,5 @@
 .burger-menu {
-  overflow: hidden;
+  //overflow: hidden;
   position: fixed;
   top: 60px;
   @include flex-column();
@@ -15,5 +15,8 @@
   }
   &.show_menu {
     transform: translate(0, 0);
+  }
+  @include tablet-over {
+    display: none;
   }
 }

@@ -1,5 +1,6 @@
 $laptop-width: 1060px;
 $tablet-width: 768px;
+$tablet-width-over: 769px;
 $big-phone-width: 600px;
 
 
@@ -9,6 +10,10 @@ $big-phone-width: 600px;
 
 @mixin tablet {
   @media (max-width: $tablet-width) { @content; }
+}
+
+@mixin tablet-over {
+  @media (min-width: $tablet-width-over) { @content; }
 }
 
 @mixin big-phone {
