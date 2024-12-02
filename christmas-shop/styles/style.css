@@ -898,4 +898,25 @@ body.body-fixed {
   }
 }
 
+.button_up {
+  display: none;
+  width: 56px;
+  height: 56px;
+  border: 1px solid #FF4646;
+  border-radius: 50%;
+  background-color: #FFF;
+  position: fixed;
+  bottom: 8px;
+  right: 8px;
+}
+@media (max-width: 768px) {
+  .button_up.show-button {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0px;
+  }
+}
+
 /*# sourceMappingURL=style.css.map */

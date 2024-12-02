@@ -2,6 +2,7 @@ import {GIFTS} from "./gifts_data.js";
 
 const giftsMenu = document.querySelector('.gifts__menu');
 const cardsItems = document.querySelector('.gifts__cards');
+const buttonUp = document.querySelector('.button_up')
 const tags = {
     "For Work": "for-work",
     "For Health": "for-health",
@@ -51,6 +52,19 @@ function cardsFilter(e) {
     }
 }
 
+function scrollUp() {
+    window.scrollTo(0, 0)
+}
 
+function showButtonUp() {
+    if (window.scrollY > 300) {
+        buttonUp.classList.add('show-button')
+    } else {
+        buttonUp.classList.remove('show-button')
+    }
+}
+
+window.onscroll = showButtonUp
 createCards(allCards);
 giftsMenu.addEventListener('click', cardsFilter);
+buttonUp.addEventListener('click', scrollUp)

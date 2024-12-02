@@ -1,0 +1,16 @@
+.button_up {
+  display: none;
+  width: 56px;
+  height: 56px;
+  border: 1px solid $color-primary;
+  border-radius: 50%;
+  background-color: $color-static-white;
+  position: fixed;
+  bottom: 8px;
+  right: 8px;
+  &.show-button {
+    @include tablet {
+      @include flex-column();
+    }
+  }
+}
