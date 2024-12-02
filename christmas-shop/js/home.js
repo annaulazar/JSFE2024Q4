@@ -1,7 +1,16 @@
+import {GIFTS} from "./gifts_data.js";
+
 const days = document.querySelector('#days')
 const hours = document.querySelector('#hours')
 const minutes = document.querySelector('#minutes')
 const seconds = document.querySelector('#seconds')
+const cardsItems = document.querySelector('.bestgifts__cards');
+
+const tags = {
+    "For Work": "for-work",
+    "For Health": "for-health",
+    "For Harmony": "for-harmony",
+};
 
 function timerNewYear() {
     let curentData = new Date()
@@ -19,5 +28,38 @@ function timerNewYear() {
     seconds.innerText = secondsLeft
 }
 
+function createCard(cardObj) {
+    const card = document.createElement('div');
+    card.classList = 'bestgifts__cards-item card';
+    card.classList.add(tags[cardObj.category]);
+    const content = `<div class="card-image"></div>
+                    <div class="card-text">
+                        <div class="card-tag header4">${cardObj.category}</div>
+                        <h3 class="card-title header3">${cardObj.name}</h3>
+                    </div>`;
+    card.innerHTML = content;
+    return card;
+}
+
+function addRandomCards(cnt, array) {
+    let randomIndexes = []
+    while (randomIndexes.length < cnt) {
+        let index = Math.floor(Math.random() * array.length)
+        if (!randomIndexes.includes(index)) {
+            randomIndexes.push(index)
+        }
+    }
+    let bestCards = []
+    for (let i of randomIndexes) {
+        bestCards.push(array[i])
+    }
+    for (let cardObj of bestCards) {
+        let cardItem = createCard(cardObj);
+        cardsItems.appendChild(cardItem);
+    }
+}
+
+
+addRandomCards(4, GIFTS)
 timerNewYear()
 setInterval(timerNewYear, 1000)
