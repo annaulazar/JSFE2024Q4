@@ -556,6 +556,7 @@ body.modal-open {
 
 .slider-row {
   align-self: flex-start;
+  transition: 0.7s;
   display: flex;
   justify-content: flex-start;
   align-items: center;

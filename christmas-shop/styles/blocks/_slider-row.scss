@@ -1,5 +1,6 @@
 .slider-row {
   align-self: flex-start;
+  transition: $transition-duration;
   @include flex-row($jc: flex-start, $gap: 20px);
   &-item {
     @include flex-row($gap: 20px)
