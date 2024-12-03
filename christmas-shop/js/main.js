@@ -3,6 +3,7 @@ const cardsItems = document.querySelector('.gifts__cards');
 const body = document.querySelector('body');
 const modalFon = document.querySelector('.modal-fon')
 
+
 function getGiftItem(target) {
     let item;
     if (target.classList.contains('card-tag') || target.classList.contains('card-title')) {
@@ -27,7 +28,11 @@ function createCardModal(cardObj) {
     const cardModal = document.createElement('div');
     cardModal.classList = 'card card_modal'
     cardModal.classList.add(TAGS[cardObj.category]);
-    const content = `<div class="card-image"></div>
+    const content = `<button class="burger burger-rotated" type="button">
+                                <span class="burger-item"></span>
+                                <span class="burger-item"></span>
+                            </button>
+                <div class="card-image"></div>
                     <div class="card-text">
                         <div class="card-text-top">
                             <div class="card-tag header4">${cardObj.category}</div>
@@ -76,7 +81,8 @@ function openModalCard(e) {
     }
     body.classList.add('modal-open')
     modalFon.style.display = 'block'
-
+    const modalCloseButton = document.querySelector('.card_modal').querySelector('.burger')
+    modalCloseButton.addEventListener('click', closeModalCard)
 }
 
 function closeModalCard() {

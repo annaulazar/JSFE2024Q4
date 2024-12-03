@@ -933,6 +933,33 @@ body.modal-open {
   left: 50%;
   transform: translate(-50%, -50%);
 }
+@media (hover: hover) {
+  .card_modal:hover {
+    cursor: default;
+  }
+  .card_modal:hover .card-title {
+    color: #181C29;
+  }
+}
+.card_modal .burger {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  z-index: 3;
+}
+.card_modal .burger-item {
+  width: 75%;
+}
+@media (hover: hover) {
+  .card_modal .burger:hover {
+    cursor: pointer;
+  }
+}
 .card_modal .card-text {
   display: flex;
   flex-direction: column;

@@ -7,6 +7,25 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  @include hover {
+    cursor: default;
+    .card-title {
+      color: $color-dark;
+    }
+  }
+  .burger {
+    @include flex-column($gap: 6px);
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    z-index: 3;
+    &-item {
+      width: 75%;
+    }
+    @include hover {
+      cursor: pointer;
+    }
+  }
   .card-text {
     @include flex-column(flex-start, stretch, 20px);
     &-top {
