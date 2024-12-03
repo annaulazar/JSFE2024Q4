@@ -924,7 +924,7 @@ body.modal-open {
 }
 
 .card_modal {
-  width: auto;
+  width: calc(100% - 16px);
   height: auto;
   max-width: 400px;
   position: fixed;

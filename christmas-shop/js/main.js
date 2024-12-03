@@ -87,11 +87,11 @@ function openModalCard(e) {
     let giftItem = getGiftItem(e.target)
     if (giftItem) {
         createCardModal(giftItem)
+        body.classList.add('modal-open')
+        modalFon.style.display = 'block'
+        const modalCloseButton = document.querySelector('.card_modal').querySelector('.burger')
+        modalCloseButton.addEventListener('click', closeModalCard)
     }
-    body.classList.add('modal-open')
-    modalFon.style.display = 'block'
-    const modalCloseButton = document.querySelector('.card_modal').querySelector('.burger')
-    modalCloseButton.addEventListener('click', closeModalCard)
 }
 
 function closeModalCard() {
