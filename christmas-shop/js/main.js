@@ -70,6 +70,15 @@ function createCardModal(cardObj) {
                         </div>
                     </div>`;
     cardModal.innerHTML = content;
+    let superItems = cardModal.querySelectorAll('.superpowers-item')
+    for (let superItem of superItems) {
+        let value = +superItem.querySelector('.superpowers-value').innerText[1]
+        let brightSnows = superItem.querySelectorAll('.snow')
+        while (value > 0) {
+            brightSnows[value - 1].classList.add('snow-bright')
+            value--
+        }
+    }
     body.appendChild(cardModal)
 }
 
