@@ -95,6 +95,9 @@ body {
   transition: position 1s;
   &.body-fixed {
     position: fixed;
+    @include tablet-over {
+      position: static;
+    }
   }
   &.modal-open {
     overflow: hidden;

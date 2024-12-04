@@ -344,6 +344,11 @@ body {
 body.body-fixed {
   position: fixed;
 }
+@media (min-width: 769px) {
+  body.body-fixed {
+    position: static;
+  }
+}
 body.modal-open {
   overflow: hidden;
   background-color: rgba(24, 28, 41, 0.8);
