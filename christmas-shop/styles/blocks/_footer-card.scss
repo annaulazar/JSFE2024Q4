@@ -1,0 +1,33 @@
+.footer-card {
+  width: calc((100% - 24px) / 3);
+  border-radius: $border-radius;
+  background-color: $color-content-background;
+  padding: 20px;
+  @include flex-column($gap:12px);
+  @include laptop {
+    width: 100%;
+  }
+  &-action,
+  &-title {
+    transition-duration: $transition-duration;
+  }
+  &-image {
+    width: 80px;
+    height: 80px;
+    &.card-phone {
+      background: url('/annaulazar-JSFE2024Q4/christmas-shop/svg/santa-claus.svg') center/cover no-repeat;
+    }
+    &.card-map {
+      background: url('/annaulazar-JSFE2024Q4/christmas-shop/svg/christmas-tree.svg') center/cover no-repeat;
+    }
+    &.card-mail {
+      background: url('/annaulazar-JSFE2024Q4/christmas-shop/svg/snake.svg') center/cover no-repeat;
+    }
+  }
+  @include hover {
+    .footer-card-action,
+    .footer-card-title {
+      color: $color-primary;
+    }
+  }
+}

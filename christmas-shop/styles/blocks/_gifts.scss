@@ -1,0 +1,39 @@
+.gifts {
+  background: $background-gifts;
+  color: $color-static-white;
+  &__content {
+    @include flex-column($gap: 20px);
+  }
+  &__title {
+    max-width: $inner-container-width;
+    text-align: center;
+  }
+  &__menu {
+    &-list {
+      @include flex-row($gap: 8px);
+      @include big-phone {
+        gap: 0px;
+      }
+    }
+    &-link {
+      display: inline-block;
+      padding: 12px 20px;
+      @include big-phone {
+        padding: 12px 8px;
+      }
+      @include hover {
+        background-color: $color-static-white-20;
+        border-radius: 12px;
+      }
+      &.active-link {
+        background-color: $color-static-white-20;
+        border-radius: 12px;
+      }
+    }
+  }
+  &__cards {
+    @include flex-row($jc: center, $gap: 12px);
+    flex-wrap: wrap;
+    row-gap: 12px;
+  }
+}

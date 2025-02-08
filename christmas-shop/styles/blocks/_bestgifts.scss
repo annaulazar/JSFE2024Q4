@@ -1,0 +1,15 @@
+.bestgifts {
+  overflow: hidden;
+  background: $background-section;
+  &__content {
+    @include flex-column($gap: 20px);
+  }
+  &__text {
+    color: $color-static-white;
+    @include flex-column($gap: 12px);
+  }
+  &__cards {
+    @include flex-row($jc: center, $gap: 12px);
+    flex-wrap: wrap;
+  }
+}

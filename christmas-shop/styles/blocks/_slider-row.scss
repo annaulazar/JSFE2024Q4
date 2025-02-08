@@ -1,0 +1,17 @@
+.slider-row {
+  align-self: flex-start;
+  @include flex-row($jc: flex-start, $gap: 20px);
+  &-item {
+    @include flex-row($gap: 20px)
+  }
+  &-image {
+    img {
+      display: block;
+      border-radius: $border-radius;
+    }
+  }
+}
+.slider__buttons {
+  align-self: flex-end;
+  @include flex-row($jc: flex-end, $gap: 20px)
+}

@@ -1,0 +1,27 @@
+@mixin text($size, $weight, $height, $spacing: normal, $transform: uppercase) {
+  font-size: $size;
+  font-weight: $weight;
+  line-height: $height;
+  letter-spacing: $spacing;
+  text-transform: $transform;
+}
+
+@mixin flex-row($jc: space-between, $ai: center, $gap: 0px) {
+  display: flex;
+  justify-content: $jc;
+  align-items: $ai;
+  gap: $gap;
+}
+
+@mixin flex-column($jc: center, $ai: center, $gap: 0px) {
+  display: flex;
+  flex-direction: column;
+  justify-content: $jc;
+  align-items: $ai;
+  gap: $gap;
+}
+
+@mixin reset_button {
+  background-color: transparent;
+  border: none;
+}

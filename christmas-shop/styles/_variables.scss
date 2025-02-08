@@ -1,0 +1,31 @@
+$color-primary: #FF4646;
+$color-primary-10: rgba(255, 70, 70, 0.10);
+$color-dark: #181C29;
+$color-static-white: #FFF;
+$color-static-white-40: rgba(255, 255, 255, 0.40);
+$color-static-white-20: rgba(255, 255, 255, 0.20);
+$color-tag-purple: #4361FF;
+$color-tag-pink: #FF43F7;
+$color-tag-green: #06A44F;
+$color-content-background: #ECF3F8;
+$color-overlay: rgba(24, 28, 41, 0.80);
+
+$background-section: url('/annaulazar-JSFE2024Q4/christmas-shop/images/bg-snow.png') center/cover no-repeat;
+$background-top: url('/annaulazar-JSFE2024Q4/christmas-shop/images/bg-ball.png') center/cover no-repeat,
+                 url('/annaulazar-JSFE2024Q4/christmas-shop/images/bg-snow.png') center/cover no-repeat;
+$background-bottom: url('/annaulazar-JSFE2024Q4/christmas-shop/images/bg-forest.png') center/cover no-repeat,
+                    url('/annaulazar-JSFE2024Q4/christmas-shop/images/bg-snow.png') center/cover no-repeat;
+$background-gifts: url('/annaulazar-JSFE2024Q4/christmas-shop/images/bg-garland.png') top/contain no-repeat;
+
+$base-width: 1440px;
+$container-width: 1276px;
+$inner-container-width: 426px;
+$padding-x: 8px;
+$padding-y: 60px;
+
+$border-radius: 20px;
+
+$font-family-base: 'Montserrat', sans-serif;
+$font-family-capture: 'Allura', sans-serif;
+
+$transition-duration: 0.7s;

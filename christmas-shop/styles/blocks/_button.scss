@@ -1,0 +1,9 @@
+.button {
+  padding: 20px 32px;
+  border-radius: $border-radius;
+  background-color: $color-dark;
+  @include hover {
+    color: $color-dark;
+    background-color: $color-static-white;
+  }
+}
